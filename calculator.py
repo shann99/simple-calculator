@@ -2,7 +2,6 @@
 
 import pyfiglet
 from simple_term_menu import TerminalMenu
-from rich import print as richprint
 
 print("\n")
 
@@ -16,7 +15,7 @@ def main():
         options = ["addition", "subtraction", "multiplication", "division"]
         terminal_menu = TerminalMenu(options, title="Select the type of calculation you would like to do! \n")
         menu_entry_index = terminal_menu.show()
-        print(f"Let's do some {options[menu_entry_index]}")
+        #print(f"\033[0;29mLet's do some {options[menu_entry_index]}\n")
 
         if menu_entry_index == 0:
             try:
@@ -61,7 +60,7 @@ def main():
     
     while True:
         print("\n")
-        print('\033[0;32mWould you like to do another calculation? \n')
+        print('\033[1;36mWould you like to do another calculation? \n')
         restartOps = ["Yes", "No"]
         restart_menu = TerminalMenu(restartOps)
         restart_menu_index = restart_menu.show()
@@ -70,7 +69,7 @@ def main():
             calculator()
             
         elif restart_menu_index == 1:
-            print('\033[0;31mProgram has been ended')
+            print('\033[1;31mThe program has ended')
             exit()
 
     
