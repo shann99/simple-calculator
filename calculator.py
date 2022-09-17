@@ -61,7 +61,7 @@ def main():
     while True:
         print("\n")
         print('\033[1;36mWould you like to do another calculation? \n')
-        restartOps = ["Yes", "No"]
+        restartOps = ["Yes", "No [Exit]"]
         restart_menu = TerminalMenu(restartOps)
         restart_menu_index = restart_menu.show()
 
