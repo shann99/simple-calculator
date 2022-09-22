@@ -51,7 +51,7 @@ def main():
                 total = num1 / num2
                 print(f"\n{num1} / {num2} = {total}")
             except:
-                print("please make sure you are entering only a number and not a string")
+                print("please make sure only numbers are being entered")
         
         
    #actually calling the calculator stuff
